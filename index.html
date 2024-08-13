@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        textarea {
+            resize: none;
+            width: 245px;
+            height: 50px;
+            border: none;
+            outline: none;
+        }
+        .boton__encriptar img,
+        .boton__desencriptar img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .mensaje__exito {
+            display: none;
+            color: green;
+            font-size: 18px;
+            text-align: center;
+        }
+        @media screen and (max-width: 800px) {
+            .boton__encriptar img,
+            .boton__desencriptar img {
+                display: none;
+            }
+        }
+    </style>
+    <title>Encriptador</title>
+    <link rel="shortcut icon" href="img/Cyber Icon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="header__logo" src="./img/alura.svg" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="left">
+                <textarea id="ingresoTexto" class="ingreso__texto" placeholder="ingresa el texto aqui"></textarea>
+                <div class="left__footer">
+                    <img src="./img/exclamacion.svg" alt="">
+                    <span class="left__info">¡Solo letras minúsculas sin acentos ni caracteres especiales!</span>
+                    <div class="left__botones">
+                        <button id="boton__encriptar" class="boton__encriptar">Encriptar</button>
+                        <button id="botonDesencriptar" class="boton__desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div id="right" class="right">
+                <img id="munheco" class="munheco" src="./img/munheco.svg" alt="">
+                <img id="imagenChica" class="imagen__chica oculto" src="./img/chica1.jpg" alt="Chica">
+                <img id="imagenChico" class="imagen__chico oculto" src="./img/chico2.jpg" alt="Chico">
+                <textarea id="mensajeFinal" class="mensajefinal" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="rightInfo" class="right__info">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <button id="botonCopiar" class="boton__copiar oculto">Copiar</button>
+                <p id="mensajeExito" class="mensaje__exito">Exito al encriptar</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer ">
+        
+        <div>
+            <a href="https://github.com/CorrectorSVR" target="_blank">
+                <img class="links" src="./img/github.svg" />
+            </a>
+            <a href="https://www.linkedin.com/in/sergio-v%C3%A9lez-rodr%C3%ADguez-7b0b23314/" target="_blank">
+                <img class="links" src="./img/linkedin.svg" />
+            </a>
+        </div>
+        <p class="creador">Desarrollado por Sergio Vélez Rodríguez.
+        </p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
