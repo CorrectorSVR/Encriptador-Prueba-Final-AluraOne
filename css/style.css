@@ -263,6 +263,9 @@ textarea {
 @media screen and (max-width: 500px) {
     .main {
         margin: auto 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
     .boton__encriptar,
     .boton__desencriptar {
@@ -280,7 +283,6 @@ textarea {
         width: 100%;
         text-align: center;
         font-size: 18px;
-        display: block; 
     }
 
     .boton__copiar {
@@ -292,6 +294,23 @@ textarea {
         position: relative; 
         padding: 10px;
         margin-bottom: 20px;
+        height: auto;
+    }
+    .rightInfo {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    footer {
+        margin-top: auto;
+        padding: 10px 0; 
+        background-color: #f3f5fc; 
     }
 }
 
