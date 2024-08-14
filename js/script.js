@@ -84,7 +84,7 @@ botonEncriptar.addEventListener("click", () => {
         };
         remplace(encriptar(texto));
         mostrarMensajeExito("encriptado");
-        swal("Texto encriptado con éxito");
+        swal("Texto encriptado","!!");
     } else {
         swal("Error","Ingrese texto a encriptar");
         reset();
@@ -107,7 +107,7 @@ botonDesencriptar.addEventListener("click", () => {
         };
         remplace(desencriptar(texto));
         mostrarMensajeExito("desencriptado");
-        swal("Texto desencriptado con éxito");
+        swal("Texto desencriptado", "¡¡");
     } else {
         swal("Error","Ingrese texto a desencriptar");
         reset();
