@@ -460,7 +460,7 @@ textarea {
     }
 
     footer {
-        padding: 20px;
+        padding: 10px;
         text-align: center; 
         background-color: #f3f5fc;
         position: relative;
@@ -482,7 +482,7 @@ textarea {
 
     .creador {
         font-size: 12px;
-        margin: 10px 0;
+        margin-bottom: 10px;
         word-wrap: break-word;
         line-height: 1.4;
     }
