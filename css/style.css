@@ -362,6 +362,35 @@ textarea {
     }
 }
 
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+    
+    footer {
+        padding: 10px;
+        text-align: center; 
+        background-color: #f3f5fc;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .footer div {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px; 
+    }
+
+    .footer img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .creador {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+
 @media screen and (max-width: 800px) and (orientation: landscape) {
     .main {
         display: flex;
