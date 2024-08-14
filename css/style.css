@@ -422,3 +422,64 @@ textarea {
         font-size: 12px;
     }
 }
+
+@media screen and (max-width: 500px) and (orientation: landscape) {
+    .main {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 10px; 
+    }
+
+    .left,
+    .right {
+        width: 48%; 
+        height: auto;
+    }
+
+    .ingreso__texto,
+    #rightInfo {
+        font-size: 16px; 
+    }
+
+    .left__footer {
+        margin-top: 10px; 
+    }
+
+    .boton__encriptar,
+    .boton__desencriptar {
+        width: 45%; 
+        height: 50px; 
+    }
+
+    .right {
+        padding: 10px;
+        text-align: center; 
+        margin-bottom: 0;
+    }
+
+    footer {
+        padding: 20px 15px;
+        text-align: center; 
+        background-color: #f3f5fc;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .footer div {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px; 
+    }
+
+    .footer img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .creador {
+        font-size: 12px;
+    }
+}
