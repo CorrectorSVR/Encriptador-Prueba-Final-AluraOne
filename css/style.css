@@ -460,12 +460,13 @@ textarea {
     }
 
     footer {
-        padding: 20px 15px;
+        padding: 20px;
         text-align: center; 
         background-color: #f3f5fc;
         position: relative;
         bottom: 0;
         width: 100%;
+        box-sizing: border-box;
     }
 
     .footer div {
@@ -481,5 +482,8 @@ textarea {
 
     .creador {
         font-size: 12px;
+        margin: 10px 0;
+        word-wrap: break-word;
+        line-height: 1.4;
     }
 }
