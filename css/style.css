@@ -266,6 +266,7 @@ textarea {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        align-items: center;
     }
     .boton__encriptar,
     .boton__desencriptar {
@@ -291,14 +292,16 @@ textarea {
     }
 
     .right {
-        position: relative; 
         padding: 10px;
         margin-bottom: 20px;
         height: auto;
+        text-align: center;
     }
     .rightInfo {
         font-size: 14px;
         padding: 5px;
+        text-align: center;
+        margin: 0 auto;
     }
 
     body {
