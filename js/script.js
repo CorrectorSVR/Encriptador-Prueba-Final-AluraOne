@@ -20,8 +20,8 @@ const remplazar = [
 ];
 
 const mostrarMensajeExito = (tipo) => {
-    mensajeExito.innerHTML = `Texto ${tipo} con éxito`;
-    mensajeExito.style.display = "block";
+   //mensajeExito.innerHTML = `Texto ${tipo} con éxito`;
+    //mensajeExito.style.display = "block";
     contenedorMensajeImagen.classList.remove("oculto");
 
     if (tipo === "encriptado") {
@@ -84,6 +84,7 @@ botonEncriptar.addEventListener("click", () => {
         };
         remplace(encriptar(texto));
         mostrarMensajeExito("encriptado");
+        swal("Texto encriptado con éxito");
     } else {
         swal("Error","Ingrese texto a encriptar");
         reset();
@@ -106,6 +107,7 @@ botonDesencriptar.addEventListener("click", () => {
         };
         remplace(desencriptar(texto));
         mostrarMensajeExito("desencriptado");
+        swal("Texto desencriptado con éxito");
     } else {
         swal("Error","Ingrese texto a desencriptar");
         reset();
