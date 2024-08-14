@@ -290,4 +290,12 @@ textarea {
     .creador {
         font-size: 12px; 
     }
+    .mensaje__exito {
+        font-size: 14px; 
+        margin-top: 5px; 
+        padding: 10px; 
+        position: relative;
+        z-index: 10;
+    }
+
 }
