@@ -290,6 +290,8 @@ textarea {
 
     .right {
         position: relative; 
+        padding: 10px;
+        margin-bottom: 20px;
     }
 }
 
