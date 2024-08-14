@@ -9,6 +9,7 @@ const right = document.getElementById("right");
 const mensajeExito = document.getElementById("mensajeExito");
 const imagenChica = document.getElementById("imagenChica");
 const imagenChico = document.getElementById("imagenChico");
+const contenedorMensajeImagen = document.getElementById("contenedorMensajeImagen");
 
 const remplazar = [
     ["e", "enter"],
@@ -21,6 +22,7 @@ const remplazar = [
 const mostrarMensajeExito = (tipo) => {
     mensajeExito.innerHTML = `Texto ${tipo} con éxito`;
     mensajeExito.style.display = "block";
+    contenedorMensajeImagen.classList.remove("oculto");
 
     if (tipo === "encriptado") {
         imagenChica.classList.remove("oculto");
@@ -44,6 +46,7 @@ const remplace = (nuevoValor) => {
 const reset = () => {
     mensajeFinal.innerHTML = "";
     munheco.classList.remove("oculto");
+    contenedorMensajeImagen.classList.add("oculto");
     imagenChica.classList.add("oculto");
     imagenChico.classList.add("oculto");
     rightInfo.style.display = "block";
@@ -58,7 +61,7 @@ const reset = () => {
 const validarTexto = (texto) => {
     const regex = /^[a-z\s]+$/;
     if (!regex.test(texto)) {
-        alert("Caracteres no válidos: solo letras minúsculas sin acentos ni caracteres especiales.");
+        swal("Advertencia","Caracteres no válidos: solo letras minúsculas sin acentos ni caracteres especiales.");
         reset();
         return false;
     }
@@ -82,7 +85,7 @@ botonEncriptar.addEventListener("click", () => {
         remplace(encriptar(texto));
         mostrarMensajeExito("encriptado");
     } else {
-        alert("Ingrese texto a encriptar");
+        swal("Error","Ingrese texto a encriptar");
         reset();
     }
 });
@@ -104,7 +107,7 @@ botonDesencriptar.addEventListener("click", () => {
         remplace(desencriptar(texto));
         mostrarMensajeExito("desencriptado");
     } else {
-        alert("Ingrese texto a desencriptar");
+        swal("Error","Ingrese texto a desencriptar");
         reset();
     }
 });
@@ -113,6 +116,6 @@ botonCopiar.addEventListener("click", () => {
     let texto = mensajeFinal;
     texto.select();
     document.execCommand('copy');
-    alert("Texto Copiado");
+    swal("Texto Copiado","¡!");
     reset();
 });

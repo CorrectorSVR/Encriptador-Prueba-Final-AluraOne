@@ -31,6 +31,7 @@
         }
     </style>
     <title>Encriptador</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="shortcut icon" href="img/Cyber Icon.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -44,7 +45,7 @@
     <main>
         <div class="main">
             <div class="left">
-                <textarea id="ingresoTexto" class="ingreso__texto" placeholder="ingresa el texto aqui"></textarea>
+                <textarea id="ingresoTexto" class="ingreso__texto" placeholder="ingrese el texto aqui"></textarea>
                 <div class="left__footer">
                     <img src="./img/exclamacion.svg" alt="">
                     <span class="left__info">¡Solo letras minúsculas sin acentos ni caracteres especiales!</span>
@@ -56,9 +57,11 @@
             </div>
             <div id="right" class="right">
                 <img id="munheco" class="munheco" src="./img/munheco.svg" alt="">
+                <div id="contenedorMensajeImagen" class="contenedor__mensaje__imagen oculto">
                 <img id="imagenChica" class="imagen__chica oculto" src="./img/chica1.jpg" alt="Chica">
                 <img id="imagenChico" class="imagen__chico oculto" src="./img/chico2.jpg" alt="Chico">
                 <textarea id="mensajeFinal" class="mensajefinal" placeholder="Ningún mensaje fue encontrado"></textarea>
+            </div>
                 <p id="rightInfo" class="right__info">Ingresa el texto que deseas encriptar o desencriptar</p>
                 <button id="botonCopiar" class="boton__copiar oculto">Copiar</button>
                 <p id="mensajeExito" class="mensaje__exito">Exito al encriptar</p>

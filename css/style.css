@@ -143,6 +143,7 @@ textarea {
 
 .mensajefinal {
     width: 100%;
+    margin-bottom: 30px;
     background: none;
     border: none;
     outline: none;
@@ -150,6 +151,8 @@ textarea {
     text-align: center;
     font-weight: bold;
     font-size: 25px;
+    z-index: 1;
+    position: relative;
 }
 
 .mensaje__final.ajustar {
@@ -216,8 +219,14 @@ textarea {
 .imagen__chica,
 .imagen__chico {
     width: 100%;
-    max-width: 200px;
-    margin: 20px 0;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contenedor__mensaje__imagen {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 @media screen and (max-width: 800px) {
