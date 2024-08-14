@@ -273,6 +273,24 @@ textarea {
     .imagen__chico {
         display: none;
     }
+
+    .mensaje__exito {
+        position: absolute;
+        bottom: 70px; 
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        display: block; 
+    }
+
+    .boton__copiar {
+        position: relative;
+        margin-top: 20px; 
+    }
+
+    .right {
+        position: relative; 
+    }
 }
 
 @media (max-width: 480px) {
@@ -290,12 +308,5 @@ textarea {
     .creador {
         font-size: 12px; 
     }
-    .mensaje__exito {
-        font-size: 14px; 
-        margin-top: 5px; 
-        padding: 10px; 
-        position: relative;
-        z-index: 10;
-    }
-
+    
 }
