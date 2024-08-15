@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 
 :root {
     --color-blue: #0a3871;
@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url('/img/fondo.jpg'); 
+    background-image: url('./img/fondo.jpg'); 
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
