@@ -437,10 +437,11 @@ body {
 @media screen and (max-width: 800px) and (orientation: landscape) {
     .main {
         display: flex;
-        flex-direction: column; 
-        justify-content: flex-start;; 
-        align-items: center; 
-        padding-bottom: 100px;
+        flex-direction: row; 
+        justify-content: space-between;; 
+        align-items: center;
+        padding: 10px; 
+        padding-bottom: 60px;
     }
 
     .left,
@@ -471,10 +472,10 @@ body {
     }
 
     footer {
-        padding: 10px 0;
+        padding: 20px;
         text-align: center; 
         background-color: #f3f5fc;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         width: 100%;
     }
@@ -499,10 +500,11 @@ body {
 @media screen and (max-width: 500px) and (orientation: landscape) {
     .main {
         display: flex;
-        flex-direction: column; 
-        justify-content: flex-start;; 
-        align-items: center; 
-        padding-bottom: 100px;
+        flex-direction: row; 
+        justify-content: space-between;; 
+        align-items: center;
+        padding: 10px; 
+        padding-bottom: 60px;
     }
 
     .header {
@@ -543,10 +545,10 @@ body {
     }
 
     footer {
-        padding: 10px 0;
+        padding: 20px;
         text-align: center; 
         background-color: #f3f5fc;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         width: 100%;
     }
