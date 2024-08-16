@@ -61,7 +61,7 @@ body {
 
 .ingreso__texto {
     width: 90%;
-    font-size: 28px;
+    font-size: 30px;
     color: var(--color-blue);
     resize: none;
     background: none;
