@@ -406,14 +406,24 @@ body {
 }
 
 @media screen and (max-width: 1200px) and (orientation: landscape) {
-    
+    .main {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;; 
+        align-items: center;
+        padding: 10px; 
+        padding-bottom: 60px;
+        margin-bottom: 50px;
+    }
+
     footer {
-        padding: 10px;
+        padding: 20px;
         text-align: center; 
         background-color: #f3f5fc;
         position: relative;
         bottom: 0;
         width: 100%;
+        margin-top: 20px;
     }
 
     .footer div {
@@ -442,6 +452,7 @@ body {
         align-items: center;
         padding: 10px; 
         padding-bottom: 60px;
+        margin-bottom: 50px;
     }
 
     .left,
@@ -475,9 +486,10 @@ body {
         padding: 20px;
         text-align: center; 
         background-color: #f3f5fc;
-        position: absolute;
+        position: relative;
         bottom: 0;
         width: 100%;
+        margin-top: 20px;
     }
 
     .footer div {
@@ -505,6 +517,7 @@ body {
         align-items: center;
         padding: 10px; 
         padding-bottom: 60px;
+        margin-bottom: 50px
     }
 
     .header {
@@ -548,9 +561,10 @@ body {
         padding: 20px;
         text-align: center; 
         background-color: #f3f5fc;
-        position: absolute;
+        position: relative;
         bottom: 0;
         width: 100%;
+        margin-top: 20px;
     }
 
     .footer div {
