@@ -1,4 +1,8 @@
-/* Reset CSS básico */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,32 +22,18 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	/* Adicional para asegurar ancho completo */
-	box-sizing: border-box;
 }
-
-/* HTML5 display-role reset para navegadores más antiguos */
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
-/* Configuraciones del body */
 body {
-	line-height: 1.5;
-	background-color: #fff;
-	color: #000;
-	font-family: Arial, sans-serif;
-	width: 100%;
-	overflow-x: hidden;
+	line-height: 1;
 }
-
-/* Listas sin estilo */
 ol, ul {
 	list-style: none;
 }
-
-/* Citas sin comillas por defecto */
 blockquote, q {
 	quotes: none;
 }
@@ -52,32 +42,7 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-
-/* Tablas colapsando bordes y sin espaciado */
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
-
-/* Enlaces sin subrayado y color heredado */
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
-/* Enfoque sin outline para accesibilidad */
-a:focus, button:focus {
-	outline: none;
-}
-
-/* Imágenes responsivas */
-img {
-	max-width: 100%;
-	height: auto;
-	display: block;
-}
-
-/* Asegurar box-sizing para todos los elementos y pseudo-elementos */
-*, *:before, *:after {
-	box-sizing: border-box;
 }
